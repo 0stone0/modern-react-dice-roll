@@ -92,7 +92,7 @@ const Dice = forwardRef<TDiceRef, TProps>((props, ref) => {
     
     useEffect(() => {
         setFaceArray(getFaceArray(size, faces, faceBg));
-    }, [size, faces, faceBg]);
+    }, [size, faceBg]);
 
     useEffect(() => {
         const positionStyles = placement?.split('-')?.reduce((acc, curr) => {
